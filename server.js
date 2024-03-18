@@ -24,11 +24,8 @@ app.put('/:id', async (request, reply) => {
 //deletar um prato
 app.delete('/:id', async(request, reply) => {
     console.log("Esse é o parametro de rota", request.params)
-    return reply.status(2024).send()
+    return reply.status(204).send()
 })
-
-
-
 
 app.listen({
     port: 3333
